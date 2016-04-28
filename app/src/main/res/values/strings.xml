@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">TopMovies</string>
+    <string name="title_activity_splash">TopMovies</string>
+    <string name="title_activity_main">TopMovies</string>
+    <string name="action_Refresh">Refresh</string>
+    <string name="action_favorite">Favorite Movies</string>
+    <string name="action_popular">Popular Movies</string>
+    <string name="action_top_rated">Top Rated</string>
+
+    <string name="popular_url">http://api.themoviedb.org/3/movie/popular?api_key=1136cb50864014944f473eba1267d164</string>
+    <string name="top_rated_url">http://api.themoviedb.org/3/movie/top_rated?api_key=1136cb50864014944f473eba1267d164</string>
+
+    <string name="title_activity_details">DetailsActivity</string>
+    <string name="action_settings">Settings</string>
+
+
+</resources>

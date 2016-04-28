@@ -1,0 +1,142 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.android.khaled.topmovies.Details.DetailsActivityFragment"
+    tools:showIn="@layout/activity_details">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView"
+         >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="275dp"
+                android:id="@+id/poster_details"
+                android:src="@drawable/p1"
+                android:layout_weight="1"
+                android:scaleType="fitXY"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mad Max"
+                android:id="@+id/title"
+                android:gravity="center"
+                android:lines="2"
+                android:textColor="#1d0b94"
+                android:textSize="30sp"
+                android:layout_margin="10dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/view_divider_color" />
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:isIndicator="true"
+                style="?android:attr/ratingBarStyleIndicator"
+                android:id="@+id/ratingBar"
+                android:numStars="5"
+                android:rating="5"
+                android:layout_margin="20dp"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2016-12-01"
+                android:id="@+id/date"
+                android:gravity="left"
+                android:layout_gravity="left"
+                android:layout_marginLeft="20dp"
+                android:textColor="#1d0b94"
+                android:textSize="25dp" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_marginTop="20dp"
+                >
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/heart2"
+                    android:background="@color/transparent"
+                    android:layout_margin="10dp"
+                    android:id="@+id/btn_favorite"
+
+                    />
+                <TextView
+                    android:id="@+id/makefavorite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Make Favorite"
+                    android:gravity="center"
+                    android:lines="2"
+                    android:textColor="#1d0b94"
+                    android:layout_gravity="center"/>
+
+                <ImageButton
+                    android:id="@+id/btn_trailer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/play"
+                    android:background="@color/transparent"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="2"
+                    android:gravity="center"
+                    android:text="Show Trailer"
+                    android:layout_marginRight="10dp"
+                    android:textColor="#1d0b94"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/view_divider_color" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Under the direction ."
+                android:id="@+id/overview"
+                android:gravity="left"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="2"
+                android:layout_margin="20dp"
+                android:textColor="#14066d" />
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/review"
+                android:divider="@color/transparent"
+                android:dividerHeight="10dp"
+                android:padding="10dp"
+                />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</RelativeLayout>

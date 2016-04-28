@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.android.khaled.topmovies.Main.MainActivity">
+    <item
+        android:id="@+id/action_refresh"
+        android:title="@string/action_Refresh"
+        />
+
+    <item
+        android:id="@+id/action_favorite"
+        android:title="@string/action_favorite"
+        />
+
+        <item
+            android:id="@+id/action_popular"
+            android:title="@string/action_popular"
+            />
+
+        <item
+            android:id="@+id/action_top_rated"
+            android:title="@string/action_top_rated"
+            />
+</menu>
